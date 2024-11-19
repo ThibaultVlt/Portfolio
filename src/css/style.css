@@ -17,6 +17,8 @@ body {
     background: linear-gradient(87deg, #fff 0%, #f3f3f3 20%);
 }
 
+/* ----------------- Partie Menu------------------ */
+
 header {
     width: 220px;
     position: fixed;
@@ -145,7 +147,7 @@ section {
 
 .principal {
     position: relative;
-    top: 5%;
+    top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,13 +160,6 @@ section {
     gap: 10px;
 }
 
-.bvn {
-    font-size: 7rem;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-}
-
 .bvn::before {
     content: "";
     position: absolute;
@@ -175,6 +170,13 @@ section {
     background-color: #f3f3f3;
     border-left: 2px solid #000;
     animation: ecriture 4s steps(12) infinite;
+}
+
+.bvn {
+    font-size: 7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
 }
 
 /* Je suis */
@@ -199,23 +201,10 @@ section {
     text-align: center;
 }
 
-#accueil {
-    position: relative;
-    top: 0;
-}
-
-#presentation {
-    border: 2px solid turquoise;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #photo-thibault {
     margin-right: 20px;
     width: 300px;
     border-radius: 30% 70% 63% 37% / 35% 30% 70% 65%;
-    animation-name: apparition linear;
 }
 
 .a-propos {
@@ -232,31 +221,132 @@ section {
     text-align: justify;
 }
 
-
-
-
-
-/* Page de contact */
-#contact {
-    border: 2px solid #ff3131;
-}
-
+/* --------------- Partie Réalisation-------------- */
+#titre-realisation,
+#titre-cv,
 #titre-contact {
     text-align: center;
     background-color: #004aad;
     color: #fff;
     width: 25%;
+    padding: 10px 0;
     margin: 20px auto;
     border-radius: 10px;
     text-decoration: underline;
 }
 
-.moyen-contact {
+.card-section {
+    padding-top: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
+.card {
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 4px solid #ff3131;
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    background-color: #004bad4f;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+}
+
+.card:hover .card-body {
+    right: 0;
+}
+
+.card-title {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.card-description {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.card-techno {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-type {
+    text-align: center;
+    font-size: 1.4rem;
+    width: 30%;
+    color: #f3f3f3;
+    border-radius: 50px;
+}
+
+.card-html {
+    background-color: #e86221;
+}
+
+.card-css {
+    background-color: #1c88c8;
+}
+
+.card-bootstrap {
+    background-color: #7b11f9;
+}
+
+.card-javascript {
+    background-color: #e0c007;
+}
+
+.card-btn {
+    text-decoration: none;
+    text-align: center;
+    color: #004aad;
+    background-color: #fff;
+    font-size: 1.4rem;
+    padding: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ------------ Page de contact --------------- */
+
+#contact {
+    position: relative;
+    height: 98vh;
+}
+
+.moyen-contact {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
 
 /* Formulaire */
 
@@ -278,9 +368,14 @@ textarea::placeholder {
     font-size: 1.5rem;
 }
 
+.nomination {
+    display: flex;
+    justify-content: space-between;
+}
+
 #nom,
 #prenom {
-    width: 47.2%;
+    width: 45.8%;
 }
 
 textarea {
@@ -291,8 +386,7 @@ textarea {
     height: 30rem;
 }
 
-    /* Boutons formulaire */
-
+/* Boutons formulaire */
 
 .boutons {
     margin: 0 auto;
@@ -339,6 +433,9 @@ textarea {
 .qr-linkedin {
     height: 300px;
     border-radius: 25px;
+    position: relative;
+    top: 15%;
+    left: 40%;
 }
 
 /* Pied de page */
@@ -349,6 +446,8 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 1.8rem;
+    position: absolute;
+    bottom: 0;
 }
 
 .liens-footer {
@@ -375,6 +474,7 @@ footer p {
 }
 
 /* ANIMATIONS */
+
 /* Machine à écrire */
 @keyframes ecriture {
     40%,
@@ -386,4 +486,3 @@ footer p {
         left: 0%;
     }
 }
-

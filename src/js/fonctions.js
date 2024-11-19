@@ -16,11 +16,6 @@ const textLoad = () => {
         text.textContent = "Bienvenue !"
     }, 0);
     setTimeout(() => {
-        text.textContent = "Hello !"
+        text.textContent = "Welcome !"
     }, 4050);
-    setTimeout(() => {
-        text.textContent = "Coucou !"
-    }, 8000);
 }
-
-

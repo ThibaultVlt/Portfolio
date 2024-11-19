@@ -1,0 +1,95 @@
+/* VERSION TABLETTE */
+@media (width >= 481px) and (width <= 1024px) {
+    body {
+        width: 100vw;
+        background: #f3f3f3;
+    }
+
+    .menu {
+        width: 220px;
+        height: 100%;
+    }
+
+    main {
+        position: absolute;
+        top: 100px;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    #principal {
+        position: relative;
+        left: 10px;
+    }
+
+    .bvn {
+        font-size: 3rem;
+    }
+
+    .phrase {
+        text-align: center;
+    }
+
+    .phrase span {
+        font-size: 2.5rem;
+    }
+
+    #titre-1 {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    #titre-2 {
+        font-size: 2.5rem;
+    }
+
+    #photo-thibault {
+        margin-bottom: 20px;
+        width: 250px;
+    }
+
+    #titre-realisation,
+    #titre-cv,
+    #titre-contact {
+        width: 100%;
+    }
+
+    .card-section {
+        padding-top: 0;
+    }
+
+    /* ------------ Page de contact --------------- */
+    #contact {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .moyen-contact {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    /* QR Codes */
+
+    .qr-linkedin {
+        left: 0;
+        margin: 20px 0;
+    }
+
+    /* --------------------- Pied de page----------------- */
+    footer {
+        margin-left: 20pw;
+        font-size: 1.2rem;
+        position: relative;
+    }
+}

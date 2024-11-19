@@ -11,8 +11,11 @@
     />
     <link rel="stylesheet" href="/src/css/bootstrap-css/bootstrap.css" />
     <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/style-tablet.css" />
+    <link rel="stylesheet" href="/src/css/style-mobile.css" />
   </head>
   <body>
+    <!-- --------------- EN-TÊTE -------------------- -->
     <header>
       <nav id="navigation">
         <a href="#accueil" title="logo cliquable">
@@ -80,7 +83,7 @@
             <h1 id="titre-1">Thibault VOLLET</h1>
           </div>
           <h2 id="titre-2">Développeur web junior</h2>
-          <section class="a-propos">
+          <div class="a-propos">
             <p class="text-presentation">
               <img
                 id="photo-thibault"
@@ -116,59 +119,133 @@
               atypique, mes projets en développement web, et ma volonté de bâtir
               une nouvelle carrière où se conjuguent passion et expertise.
             </p>
-          </section>
+          </div>
         </div>
       </section>
       <!-- --------------- RÉALISATION -------------------- -->
       <section id="realisation">
-        <div class="card">
-          <img
-            class="card-img"
-            src="/src/img/realisation/pendu.JPG"
-            alt="jeu du pendu"
-            title="Jeu du pendu"
-          />
+        <h2 id="titre-realisation">RÉALISATION</h2>
+        <div class="card-section">
+          <div class="card">
+            <img
+              class="card-img"
+              src="/src/img/realisation/pendu.JPG"
+              alt="jeu du pendu"
+              title="Jeu du pendu"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Le pendu</h4>
+              <p class="card-description">
+                Jeu interactif réalisé en HTML, bootstrap et JavaScript.
+              </p>
+              <div class="card-techno">
+                <p class="card-type card-html">HTML</p>
+                <p class="card-type card-bootstrap">Bootstrap</p>
+                <p class="card-type card-javascript">Javascript</p>
+              </div>
+              <a
+                class="card-btn"
+                href="https:\/\/thibaultvlt.github.io/Pendu/"
+                title="redirection vers le projet"
+              >
+                Lien vers le site
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="/src/img/realisation/juste-prix.JPG"
+              alt="jeu du pendu"
+              title="Jeu du pendu"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Le juste prix</h4>
+              <p class="card-description">
+                Jeu interactif réalisé en HTML, Bootstrap et JavaScript.
+              </p>
+              <div class="card-techno">
+                <p class="card-type card-html">HTML</p>
+                <p class="card-type card-bootstrap">Bootstrap</p>
+                <p class="card-type card-javascript">Javascript</p>
+              </div>
+              <a
+                class="card-btn"
+                href="https://thibaultvlt.github.io/Juste_prix/"
+                title="redirection vers le projet"
+              >
+                Lien vers le site
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="/src/img/realisation/atelier_peintre.JPG"
+              alt="jeu du pendu"
+              title="Jeu du pendu"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Les artistes peintres</h4>
+              <p class="card-description">
+                Site d'une galerie d'art réalisé en HTML, CSS et JavaScript.
+              </p>
+              <div class="card-techno">
+                <p class="card-type card-html">HTML</p>
+                <p class="card-type card-css">CSS</p>
+                <p class="card-type card-javascript">Javascript</p>
+              </div>
+              <a
+                class="card-btn"
+                href="https://thibaultvlt.github.io/Atelier_peintre/"
+                title="redirection vers le projet"
+              >
+                Lien vers le site
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <!-- --------------- CURRICULUM VITAE -------------------- -->
-      <section id="cv" class="d-flex flex-column gap-4">
+      <section id="cv" class="d-flex flex-column gap-2">
+        <h2 id="titre-cv">CURRICULUM VITAE</h2>
         <!-- Section COMPÉTENCES -->
         <h2
-          class="fs-1 text-center text-decoration-underline m-4 bg-primary text-white w-45 py-3 mx-auto rounded-4"
+          class="fs-5 col-lg-4 col-7 text-center text-decoration-underline m-4 border border-3 border-primary text-danger py-3 mx-auto rounded-4"
         >
           DOMAINES DE COMPÉTENCES ET SAVOIR ÊTRE
         </h2>
-        <section
+        <div
           id="competence"
-          class="d-flex justify-content-center gap-5 mt-4"
+          class="d-flex flex-wrap justify-content-center gap-5"
         >
           <div id="technique">
             <h3
-              class="fs-1 mb-3 text-decoration-underline border border-black p-2 w-33"
+              class="mb-3 p-lg-2 me-3 w-100 text-decoration-underline text-center"
             >
               Technique :
             </h3>
-            <div class="row">
+            <div class="text-center">
               <img
-                class="hp-100 col-lg-3"
+                class="hp-100 wp-100"
                 src="/src/img/skills/logo-HTML5-sansfond.png"
                 alt=""
                 title=""
               />
               <img
-                class="hp-100 col-lg-3"
+                class="hp-100 wp-100"
                 src="/src/img/skills/logo-css-sansfond.png"
                 alt=""
                 title=""
               />
               <img
-                class="hp-100 col-lg-3"
+                class="hp-100 wp-100"
                 src="/src/img/skills/logo-js-sansfond.png"
                 alt=""
                 title=""
               />
               <img
-                class="hp-100 col-lg-3"
+                class="hp-100 wp-100"
                 src="/src/img/skills/logo-bootstrap-sansfond.png"
                 alt=""
                 title="Logo Bootstrap"
@@ -176,14 +253,12 @@
             </div>
           </div>
           <div id="soft">
-            <h3
-              class="fs-1 text-decoration-underline mb-3 p-2 border border-black w-50"
-            >
+            <h3 class="text-decoration-underline mb-3 w-60 text-center">
               Atouts :
             </h3>
             <div class="row">
               <div class="col-lg-1"></div>
-              <ul class="col-lg-10 ms-5">
+              <ul class="col-lg-10 col-12 ms-5">
                 <li class="fs-7">Dynamique</li>
                 <li class="fs-7">Capacité d'adaptation</li>
                 <li class="fs-7">Résistance au stress</li>
@@ -191,11 +266,11 @@
               </ul>
             </div>
           </div>
-        </section>
+        </div>
         <!-- Section EXPÉRIENCE -->
         <section id="experience">
           <h2
-            class="fs-1 text-center text-decoration-underline m-4 bg-primary text-white w-45 py-3 mx-auto rounded-4"
+            class="fs-5 col-lg-4 col-7 text-center text-decoration-underline m-4 border border-3 border-danger text-primary py-3 mx-auto rounded-4"
           >
             EXPÉRIENCES PROFESSIONNELLES
           </h2>
@@ -239,46 +314,45 @@
         <!-- Section FORMATION -->
         <section id="diplome">
           <h2
-            class="fs-1 text-center text-decoration-underline m-4 bg-primary text-white w-45 py-3 mx-auto rounded-4"
+            class="fs-5 col-lg-4 col-7 text-center text-decoration-underline m-4 bg-danger text-white border border-3 border-primary py-3 mx-auto rounded-4"
           >
             FORMATIONS
           </h2>
-          <section class="row">
+          <div class="row ms-5">
             <div class="col-lg-1"></div>
-            <div id="titre-pro" class="col-lg-3">
+            <div id="titre-pro" class="col-lg-3 col-11">
               <p class="fs-7 col-lg-12">En cours de formation</p>
               <div class="col-lg-12">
-                <h4 class="fs-2 fw-bold">
+                <h4 class="fs-5 fw-bold">
                   Titre Professionnel Développeur web et web mobile
                 </h4>
                 <p class="fs-8">AFPA - Beaumont 63110</p>
               </div>
             </div>
-            <div class="col-lg-1"></div>
-            <div id="bts" class="col-lg-4">
+            <div id="bts" class="col-lg-4 col-11">
               <p class="fs-7 col-lg-12">2008 &rarr; 2010</p>
               <div class="col-lg-12">
-                <h4 class="fs-2 fw-bold">BTS Maintenance Industrielle</h4>
+                <h4 class="fs-5 fw-bold">BTS Maintenance Industrielle</h4>
                 <p class="fs-8">Lycée Modeste Leroy - Évreux 27000</p>
               </div>
             </div>
-            <div id="bac" class="col-lg-3">
-              <p class="fs-7 col-lg-12">2005 &rarr; 2008</p>
+            <div id="bac" class="col-lg-3 col-11">
+              <p class="fs-7 col-lg-12 col-10">2005 &rarr; 2008</p>
               <div class="col-lg-12">
-                <h4 class="fs-2 fw-bold">Bac STI Génie Mécanique</h4>
+                <h4 class="fs-5 fw-bold">Bac STI Génie Mécanique</h4>
                 <p class="fs-8">Lycée Modeste Leroy - Évreux 27000</p>
               </div>
             </div>
-          </section>
+          </div>
         </section>
       </section>
       <!-- --------------- CONTACT -------------------- -->
       <section id="contact">
-        <h2 id="titre-contact">Contact</h2>
-        <section class="moyen-contact">
+        <h2 id="titre-contact">CONTACT</h2>
+        <div class="moyen-contact">
           <form>
             <!--Série de champ à remplir pour les informations demandées-->
-            <div>
+            <div class="nomination">
               <input
                 type="text"
                 id="nom"
@@ -328,19 +402,20 @@
               title="QR code linkedin"
             />
           </div>
-        </section>
-      </section>
-      <footer>
-        <p>© Thibault2024</p>
-        <div class="liens-footer">
-          <a href="#" title="lien pour les mentions légales">
-            Mentions légales
-          </a>
-          <a href="#" title="lien pour la politique de confidentialité">
-            Politique de confidentialité
-          </a>
         </div>
-      </footer>
+        <footer>
+          <p>© Thibault2024</p>
+          <div class="liens-footer">
+            <a href="#" title="lien pour les mentions légales">
+              Mentions légales
+            </a>
+            <a href="#" title="lien pour la politique de confidentialité">
+              Politique de confidentialité
+            </a>
+          </div>
+        </footer>
+      </section>
+      <!-- --------------- PIED DE PAGE -------------------- -->
     </main>
     <script src="/src/js/bootstrap-js/bootstrap.js"></script>
     <script src="/src/js/fonctions.js"></script>
