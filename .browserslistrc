@@ -1,0 +1,4 @@
+defaults
+maintained node versions
+
+extends @github/browserslist-config

@@ -1,0 +1,5 @@
+{
+  "dest": "./docs/scss/",
+  "strict": true,
+  "verbose": true
+}

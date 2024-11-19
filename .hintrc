@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "web-recommended"
+  ],
+  "ignoredUrls": [
+    {
+      "domain": "cdn\\.jsdelivr\\.net/.*",
+      "hints": [
+        "*"
+      ]
+    },
+    {
+      "domain": "fonts\\.googleapis\\.com/.*",
+      "hints": [
+        "*"
+      ]
+    },
+    {
+      "domain": "fonts\\.gstatic\\.com/.*",
+      "hints": [
+        "*"
+      ]
+    }
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "text-size-adjust"
+        ]
+      }
+    ]
+  }
+}

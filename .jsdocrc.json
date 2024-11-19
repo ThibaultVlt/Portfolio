@@ -1,0 +1,12 @@
+{
+    "opts": {
+        "destination": "docs/js",
+        "template": "templates/default",
+        "encoding": "utf8",
+        "recurse": true,
+        "verbose": true
+    },
+    "templates": {
+        "monospaceLinks": true
+    }
+}

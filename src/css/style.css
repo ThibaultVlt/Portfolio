@@ -1,0 +1,389 @@
+@font-face {
+    font-family: "Contrail One";
+    src: url("/src/font/Contrail_One/ContrailOne-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "Contrail One", Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(87deg, #fff 0%, #f3f3f3 20%);
+}
+
+header {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 3px 4px 13px -5px rgb(0 0 0 / 100%);
+}
+
+nav {
+    background-color: #004aad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 4em 1em 1em;
+}
+
+#logo {
+    width: 65px;
+    border-radius: 50%;
+}
+
+/* Faire le burger et l'animation */
+#burger {
+    width: 42px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+#burger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.5s ease-in-out;
+}
+
+#burger span::before,
+#burger span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+
+#burger span::before {
+    transform: translateY(-10px);
+}
+
+#burger span::after {
+    transform: translateY(10px);
+}
+
+#burger.active span {
+    background-color: transparent;
+}
+
+#burger.active span::before {
+    transform: translateY(0) rotateZ(45deg);
+}
+
+#burger.active span::after {
+    transform: translateY(0) rotateZ(-45deg);
+}
+
+.menu {
+    background-color: #004aad;
+    width: 220px;
+    padding: 3em 0;
+    position: fixed;
+    left: -250px;
+    transition: left 0.5s ease;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 1.5em;
+}
+
+.menu.active {
+    left: 0;
+}
+
+#list-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+} /* Fin du menu */
+
+.linkedin,
+.github {
+    width: 40px;
+    background-color: #fff;
+}
+
+.linkedin {
+    border-radius: 10%;
+}
+
+.github {
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    height: 100vh;
+}
+
+.principal {
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.bvn {
+    font-size: 7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.bvn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3;
+    border-left: 2px solid #000;
+    animation: ecriture 4s steps(12) infinite;
+}
+
+/* Je suis */
+.phrase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phrase span {
+    font-size: 5rem;
+}
+
+#titre-1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+#titre-2 {
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#accueil {
+    position: relative;
+    top: 0;
+}
+
+#presentation {
+    border: 2px solid turquoise;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#photo-thibault {
+    margin-right: 20px;
+    width: 300px;
+    border-radius: 30% 70% 63% 37% / 35% 30% 70% 65%;
+    animation-name: apparition linear;
+}
+
+.a-propos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 68%;
+    margin-top: 8rem;
+}
+
+.text-presentation {
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+
+
+
+
+/* Page de contact */
+#contact {
+    border: 2px solid #ff3131;
+}
+
+#titre-contact {
+    text-align: center;
+    background-color: #004aad;
+    color: #fff;
+    width: 25%;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+.moyen-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* Formulaire */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+input {
+    padding: 1rem;
+    margin: 1.2rem 1rem;
+    border-radius: 18px;
+    font-size: 1.5rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 1.5rem;
+}
+
+#nom,
+#prenom {
+    width: 47.2%;
+}
+
+textarea {
+    padding: 1rem;
+    margin: 2.5rem 1rem;
+    resize: none;
+    border-radius: 18px;
+    height: 30rem;
+}
+
+    /* Boutons formulaire */
+
+
+.boutons {
+    margin: 0 auto;
+}
+
+.btn-submit,
+.btn-reset {
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 10px;
+    width: 10rem;
+    border-color: #fff;
+}
+
+.btn-submit {
+    background-color: #004aad;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    color: #004aad;
+}
+
+.btn-submit:active {
+    background-color: #ff3131;
+    color: #fff;
+}
+
+.btn-reset {
+    background-color: #ff3131;
+}
+
+.btn-reset:hover {
+    background-color: #004aad;
+}
+
+.btn-reset:active {
+    background-color: #fff;
+    color: #ff3131;
+}
+
+/* QR Codes */
+
+.qr-linkedin {
+    height: 300px;
+    border-radius: 25px;
+}
+
+/* Pied de page */
+
+footer {
+    margin: 0 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+
+.liens-footer {
+    margin-right: 5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+}
+
+.liens-footer a {
+    color: #000;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Flottante */
+
+.left {
+    float: left;
+}
+
+/* ANIMATIONS */
+/* Machine à écrire */
+@keyframes ecriture {
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+

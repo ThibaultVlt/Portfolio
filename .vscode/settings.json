@@ -1,0 +1,87 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "css.lint.compatibleVendorPrefixes": "warning",
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.ieHack": "error",
+    "css.lint.important": "warning",
+    "css.lint.importStatement": "warning",
+    "css.lint.universalSelector": "warning",
+    "css.lint.unknownVendorSpecificProperties": "warning",
+    "css.lint.zeroUnits": "warning",
+    "css.validate": false,
+    "docthis.returnsTag": true,
+    "dotenv.enableAutocloaking": false,
+    "editor.codeActionsOnSave": {
+        "source.addMissingImports": "explicit",
+        "source.fixAll": "explicit",
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "editor.linkedEditing": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100,
+    "emojisense.languages": {
+        "git-commit": true,
+        "html": true,
+        "markdown": true,
+        "plaintext": {
+            "emojiDecoratorsEnabled": false,
+            "markupCompletionsEnabled": false
+        },
+        "scminput": true
+    },
+    "eslint.lintTask.enable": true,
+    "files.autoSave": "onWindowChange",
+    "gremlins.showInProblemPane": true,
+    "html-css-class-completion.enableEmmetSupport": true,
+    "liveSassCompile.settings.autoprefix": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "extensionName": ".css",
+            "format": "compressed",
+            "savePath": "/dist/css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveSassCompile.settings.showOutputWindowOn": "Warning",
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveServer.settings.useWebExt": true,
+    "markdown.validate.enabled": true,
+    "partialDiff.enableTelemetry": false,
+    "redhat.telemetry.enabled": false,
+    "scss.lint.compatibleVendorPrefixes": "warning",
+    "scss.lint.duplicateProperties": "warning",
+    "scss.lint.ieHack": "error",
+    "scss.lint.important": "warning",
+    "scss.lint.importStatement": "warning",
+    "scss.lint.universalSelector": "warning",
+    "scss.lint.unknownVendorSpecificProperties": "warning",
+    "scss.lint.zeroUnits": "warning",
+    "scss.validate": false,
+    "sonarlint.disableTelemetry": true,
+    "stylelint.snippet": ["css", "less", "postcss", "sass"],
+    "stylelint.validate": ["css", "less", "postcss", "sass"],
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "XXX", "[ ]"],
+    "vs-code-prettier-eslint.prettierLast": true,
+    "window.commandCenter": true,
+    "workbench.editor.wrapTabs": true,
+    "liveServer.settings.port": 5500,
+    "MS-CST-E.vscode-devskim.rules.enableBestPracticeSeverityRules": true,
+    "MS-CST-E.vscode-devskim.rules.enableManualReviewSeverityRules": true
+}

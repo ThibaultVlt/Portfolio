@@ -1,0 +1,20 @@
+{
+  "check": true,
+  "comments": true,
+  "compact": true,
+  "continue": true,
+  "diff": true,
+  "in-place": false,
+  "log-files": true,
+  "no-duplicate-keys": true,
+  "patterns": [
+    "**/*.json",
+    "**/.*rc",
+    "!**/.browserlistrc",
+    "!**/node_modules"
+  ],
+  "sort-keys": false,
+  "trailing-commas": false,
+  "trailing-newline": true,
+  "trim-trailing-commas": true
+}
