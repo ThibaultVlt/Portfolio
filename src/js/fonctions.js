@@ -22,12 +22,12 @@ const textLoad = () => {
 };
 
 
-
+// Activer et Désactiver la feuille de style bootstrap
 
 document.addEventListener("DOMContentLoaded", () => {
     const cssBootstrap = document.querySelector('#bootstrap-stylesheet');
     const cvSection = document.querySelector('#cv');
-    const otherSections = document.querySelectorAll('section:not(#cv)');
+    const header = document.querySelector('header');
 
     // Fonction pour activer la feuille de style Bootstrap pour la section #cv
     const activerBootstrapSurCV = () => {
