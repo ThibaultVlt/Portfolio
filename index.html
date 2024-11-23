@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Thibault VOLLET</title>
+    <meta
+      name="description"
+      content="Portfolio de développeur web de Thibault VOLLET"
+    />
     <link
       rel="shortcut icon"
       href="/src/img/favicon-16x16.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/src/css/bootstrap-css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="/src/css/bootstrap-css/bootstrap.css"
+      id="bootstrap-stylesheet"
+    />
     <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="stylesheet" href="/src/css/style-tablet.css" />
     <link rel="stylesheet" href="/src/css/style-mobile.css" />
@@ -207,8 +215,15 @@
         </div>
       </section>
       <!-- --------------- CURRICULUM VITAE -------------------- -->
-      <section id="cv" class="d-flex flex-column gap-2">
-        <h2 id="titre-cv">CURRICULUM VITAE</h2>
+      <section id="cv" class="d-flex flex-column gap-2 vh-100">
+        <!-- TODO Attention dimension de la section CV -->
+        <!-- TODO Faire le responsive du CV-->
+        <h2
+          id="titre-cv"
+          class="col-lg-1 mx-auto py-3 w-25 bg-primary text-decoration-underline text-white text-center rounded-4"
+        >
+          CURRICULUM VITAE
+        </h2>
         <!-- Section COMPÉTENCES -->
         <h2
           class="fs-5 col-lg-4 col-7 text-center text-decoration-underline m-4 border border-3 border-primary text-danger py-3 mx-auto rounded-4"
