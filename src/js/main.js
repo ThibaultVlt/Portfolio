@@ -1,2 +1,2 @@
 textLoad();
-setInterval(textLoad, 8000);
+setInterval(textLoad, 4000);
