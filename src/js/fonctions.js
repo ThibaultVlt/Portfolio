@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Bootstrap activé pour #cv");
     };
 
+    // Fonction pour que le header n'ai pas l'activation de bootstrap.
+    //TODO Faire la fonction
+
     // Fonction pour désactiver la feuille de style Bootstrap pour les autres sections
     const desactiverBootstrapSurLesAutre = () => {
         cssBootstrap.disabled = true; // Désactive la feuille de style
